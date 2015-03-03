@@ -17,9 +17,23 @@ header {
   text-align: center;
   font-size: 45px;
 
+  .login-button {
+    width: 10%;
+    float: right;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 25px;
+    padding: 3px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
   h1 {
     margin: 0px;
     margin-top: 45px;
+    margin-left: 125px;
   }
 
   h3 {
