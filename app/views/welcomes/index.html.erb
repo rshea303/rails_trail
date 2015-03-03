@@ -12,6 +12,7 @@
       <div class="tables">
         <div class="top-ten-table">
           <table>
+            <h5>Top 10 Cities</h5>
             <tr>
               <th>Location</th>
               <th>Jobs</th>
@@ -26,6 +27,7 @@
         </div>
         <div class="top-ten-pay">
           <table>
+            <h5>Top 10 Pay</h5>
             <tr>
               <th>Location</th>
               <th>Pay</th>
@@ -38,6 +40,20 @@
             <% end %>
           </table>
         </div>
+        <div class="top-ten-remote">
+          <table>
+            <h5>Top 10 Remote</h5>
+            <tr>
+              <th>Company</th>
+            </tr>
+            <% @jobs.each do |job| %>
+              <tr>
+                <td><%= link_to "#{job[3]}", jobs_path %></td>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+
       </div>
     </div>
   </body>
