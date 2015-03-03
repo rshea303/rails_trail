@@ -4,9 +4,24 @@
     <link rel="stylesheet" type="text/css" href="jobs.scss">  
   </head>
   <body>
-    <header>
-      This is the header for the 2nd page
-    </header>
-    <h1>Page 2 - Rails Trail</h1>
+    <div class="welcome-page-content">
+      <%= render 'partials/header' %>
+        <div class="city-jobs">
+          <table>
+            <tr>
+              <th>Job Title</th>
+              <th>Salary</th>
+              <th>Remote Option</th>
+            </tr>
+              <% @filler.each do |filler| %>
+                <tr>
+                  <td><%= "#{filler[0]}" %></td>
+                  <td><%= "#{filler[1]}" %></td>
+                  <td><%= "#{filler[2]}" %></td>
+                </tr>
+              <% end %>
+          </table>
+        </div>
+    </div>
   </body>
 </html>

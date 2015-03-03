@@ -33,7 +33,7 @@ header {
   h1 {
     margin: 0px;
     margin-top: 45px;
-    margin-left: 125px;
+    margin-left: 135px;
   }
 
   h3 {
@@ -92,4 +92,22 @@ h5 {
   font-size: 21px;
   padding: 10px;
   border-radius: 25px;
+}
+
+/* show page */
+
+.city-jobs {
+  text-align: center;
+  background-color: white;
+  height: 350px;
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;  
+  border-radius: 25px;
+  margin-top: -15px;
+
+  table {
+    font-size: 25px;
+    padding: 15px;
+  }
 }
