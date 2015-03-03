@@ -8,6 +8,20 @@
       <header>
         <h1>Rails Trail</h1>
       </header>
+      <div class="top-ten-table">
+        <table>
+          <tr>
+            <th>Location</th>
+            <th>Jobs</th>
+          </tr>
+          <% @jobs.each do |job| %>
+            <tr>
+              <td><%= link_to "#{job[0]}", jobs_path  %></td>
+              <td><%= "#{job[1]}" %></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
     </div>
   </body>
 </html>
