@@ -15,14 +15,35 @@ body {
 header {
   width: 100%;
   text-align: center;
-  font-size: 60px;
+  font-size: 45px;
+
+  h3 {
+    font-size: 30px;
+  }
+}
+
+.tables {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .top-ten-table {
+  margin-top: -15px;
   background-color: white;
-  width: 20%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 30%;
+  float: left;
+  height: 300px;
+  font-size: 21px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.top-ten-pay {
+  margin-top: -15px;
+  background-color: white;
+  width: 30%;
+  float: left;
   height: 300px;
   font-size: 21px;
   padding: 10px;
